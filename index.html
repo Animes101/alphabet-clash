@@ -12,7 +12,77 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>hello world</h1>
+    <main class=" bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!--header area-->
+        <section id="home-screen" class="flex flex-col justify-center items-center space-y-5 min-h-screen">
+            <h1 class="text-8xl text-white anton-regular font-bold tracking-[20px]">ALPHABET CLASH</h1>
+            <p class="text-lg font-bold text-white poppins-extralight">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button onclick="play()" class="btn btn-purple">Play Now</button>
+        </section>
+        <!--play ground area-->
+        <section id="play" class="play-ground hidden flex justify-center flex-col items-center h-screen space-y-7">
+            <!--screen area-->
+            <div>
+                <div class="artboard artboard-horizontal phone-6 border-8 border-gray-800 bg-[#FFFFFFB3]
+                ] rounded-2xl">
+                    <p class="text-center w-[60%] bg-gray-800 text-white p-2 rounded-bl-md rounded-br-md mx-auto">Don't watch keyboard  while playing...</p>
+
+                    <div class="flex justify-center mt-[80px]">
+                        <h1 id="currentAlphabet" class="text-9xl ">Y</h1>
+                    </div>
+            </div>
+            </div>
+            <!--key word-->
+               <div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="q" class="kbd">q</kbd>
+                    <kbd id="w" class="kbd">w</kbd>
+                    <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="r" class="kbd">r</kbd>
+                    <kbd id="t" class="kbd">t</kbd>
+                    <kbd id="y" class="kbd">y</kbd>
+                    <kbd id="u" class="kbd">u</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
+                    <kbd id="o" class="kbd">o</kbd>
+                    <kbd id="p" class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="a" class="kbd">a</kbd>
+                    <kbd id="s" class="kbd">s</kbd>
+                    <kbd id="d" class="kbd">d</kbd>
+                    <kbd id="f" class="kbd">f</kbd>
+                    <kbd id="g" class="kbd">g</kbd>
+                    <kbd id="h" class="kbd">h</kbd>
+                    <kbd id="j" class="kbd">j</kbd>
+                    <kbd id="k" class="kbd">k</kbd>
+                    <kbd id="l" class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="z" class="kbd">z</kbd>
+                    <kbd id="x" class="kbd">x</kbd>
+                    <kbd id="c" class="kbd">c</kbd>
+                    <kbd id="v" class="kbd">v</kbd>
+                    <kbd id="b" class="kbd">b</kbd>
+                    <kbd id="n" class="kbd">n</kbd>
+                    <kbd id="m" class="kbd">m</kbd>
+                    <kbd id="/" class="kbd">/</kbd>
+                  </div>
+               </div>  
+               <div class="space-x-[900px]">
+                <button class="btn bg-gray-600 text-2xl text-white">Life <img src="images/icon/Group 23.svg" alt=""><span>1</span></button>
+
+                  <button class="btn bg-gray-600 text-2xl text-white">Score <img src="images/icon/monetization_on.svg" alt=""><span>1</span></button>
+               </div>
+        </section>
+        <!--score area-->
+        <section class="seore hidden min-h-screen flex justify-center items-center">
+           <div class="bg-gray-400 w-[30%] p-11 rounded-md space-y-9">
+            <h1 class="text-5xl text-center text-white font-bold anto-regular">Score : 14</h1>
+            <button class="btn hover:text-black bg-gray-500 text-white w-[200px] block mx-auto">Play Now</button>
+            <p class="text-xl text-black text-center">Practice will make you Pro</p>
+           </div>
+        </section>
+    </main>
     
 
 

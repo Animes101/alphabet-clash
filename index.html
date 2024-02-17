@@ -69,16 +69,16 @@
                   </div>
                </div>  
                <div class="space-x-[900px]">
-                <button class="btn bg-gray-600 text-2xl text-white">Life <img src="images/icon/Group 23.svg" alt=""><span>1</span></button>
+                <button class="btn bg-gray-600 text-2xl text-white">Life <img src="images/icon/Group 23.svg" alt=""><span id="currentLife">5</span></button>
 
-                  <button class="btn bg-gray-600 text-2xl text-white">Score <img src="images/icon/monetization_on.svg" alt=""><span>1</span></button>
+                  <button class="btn bg-gray-600 text-2xl text-white">Score <img src="images/icon/monetization_on.svg" alt=""><span id="currentScore">0</span></button>
                </div>
         </section>
         <!--score area-->
-        <section class="seore hidden min-h-screen flex justify-center items-center">
+        <section id="final-score" class="seore hidden min-h-screen flex justify-center items-center">
            <div class="bg-gray-400 w-[30%] p-11 rounded-md space-y-9">
-            <h1 class="text-5xl text-center text-white font-bold anto-regular">Score : 14</h1>
-            <button class="btn hover:text-black bg-gray-500 text-white w-[200px] block mx-auto">Play Now</button>
+            <h1 class="text-5xl text-center text-white font-bold anto-regular">Score : <span id="game-score">0</span></h1>
+            <button onclick="play()" class="btn hover:text-black bg-gray-500 text-white w-[200px] block mx-auto">Play Now</button>
             <p class="text-xl text-black text-center">Practice will make you Pro</p>
            </div>
         </section>
